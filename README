@@ -1,0 +1,23 @@
+The Lua and Moonscript versions have the most features, which are callable from the command line. All versions take the option -h to view command line usage.
+You'll need to run these from the directory where the dictionary "dict" is located (or copy the dict file to the correct directory.) This file is a file with one word per line.
+
+randompassword.lua - This is the Lua version. Runs with Lua 5.1 or 5.2 (including luajit.) It optionally requires luasocket, but the random seed may not be portable without luasocket.
+randompassword.moon - This is the most recent version written in Moonscript. It optionally requires luasockt, but the random seed may not be portable withouth luasocket.
+randompassword.php - This is the command line launcher for the PHP version that accepts a single argument
+randomWordPassword.php - This is the minimal PHP version. It was the first attempt at this and the most basic
+
+Lua (http://www.lua.org/) install:
+Download and install Lua
+Download and install Luarocks (optional, maybe)
+Make sure Lua and Luarocks are added to your PATH
+run: luarocks install luasocket
+cd "path to randompassword.lua"
+lua randompassword.lua -h
+
+Moonscript (http://moonscript.org/) install:
+Download and install Moonscript (may require Lua installed on some platforms.)
+Download and install Luarocks (optional, maybe)
+Make sure Moonscript and others are in your PATH
+cd "path to randompassword.moon"
+moon randompassword.moon -h
+
